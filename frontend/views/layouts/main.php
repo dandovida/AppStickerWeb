@@ -37,7 +37,14 @@ AppAsset::register($this);
     ]);
     $menuItems = [
         ['label' => 'Empresa', 'url' => ['/moduloempresa/empresa/index']],
-        ['label' => 'Usuario', 'url' => ['/modulousuario/usuarios/index']],
+        
+        ['label' => 'Registro',
+            'items'=>[
+                ['label' => 'Usuario', 'url' => ['/modulousuario/usuarios/index']],
+                ['label' => 'Persona', 'url' => ['/modulousuario/persona/index']],
+           
+            ]
+         ],
         ['label' => 'Sticker', 'url' => ['/modulosticker/solicitud-sticker/index']],
         ['label' => 'Area', 'url' => ['/moduloarea/area/index']],
         ['label' => 'Rol', 'url' => ['/modulorol/rol/index']],
